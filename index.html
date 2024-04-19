@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Fontawesome link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
   </head>
   <body>
@@ -17,7 +16,7 @@
     <header class="bg-dark fixed-top">
       <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold fs-3" href="#">LearnEd</a>
+          <a class="navbar-brand fw-bold fs-3" href="#">LearnED</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -71,11 +70,14 @@
           <h3 class="mt-4 h4">Vision</h3>
           <p class="text-center">Our vision is to create a world where education is a unifying force that transcends diversity, fostering understanding, laughter, and empowerment among students. Together, we aim to shape a future where every child's potential is unlocked, transforming communities and, ultimately, the world.</p>
         </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-hand-holding-heart"></i>
-          <h3 class="mt-4 h4">Values</h3>
-          <p class="text-center">Diversity, Children, Education, Empowering</p>
-        </div>
+        <div class="row justify-content-center"> <!-- Added justify-content-center class -->
+          <div class="col-12 col-md-8"> <!-- Adjusted column width for medium screens -->
+            <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4">
+              <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-hand-holding-heart"></i>
+              <h3 class="mt-4 h4">Values</h3>
+              <p class="text-center">Diversity, Children, Education, Empowering</p>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -134,18 +136,23 @@
               <img src="images/python.JPG" class="img-fluid" alt="Gallery-img">
               <div class="card-body text-center">
                 <h6 class="card-title">The Window of Change</h6>
-               
               </div>
             </div>
           </div>
         </div>
-      </div>      
+      </div> 
+      <div class="row d-flex justify-content-center align-items-center mt-5 mx-0">
+        <!-- Button to another website -->
+        <div class="col-12 text-center">
+          <a href="gallery/index.html" class="btn btn-primary btn-lg">See More....</a>
+        </div>
+      </div>     
     </section>
 
     <!-- Projects Section -->
     <section class="container py-5" id="project">
       <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
           <h2>Our Projects</h2>
           <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about Projects we have done.</h5>
         </div>
@@ -194,9 +201,9 @@
       </div> 
       <div class="row justify-content-md-center mt-5 pt-5">
         <div class="col-3 col-md-2 d-flex justify-content-center hire-text">
-          <h2 class="h4 d-flex justify-content-center align-items-center bg-primary text-white rounded-circle border border-5 border-dark-subtle"><span class="d-none d-md-block">YOU<br>ARE<br>NEXT</span></h2>
+          <h2 class="h4 d-flex justify-content-center align-items-center bg-primary text-white rounded-circle border border-5 border-dark-subtle">You<br>Are<br>Next</h2>
         </div>
-      </div>      
+      </div>     
     </section>
 
     <!-- Our About Section -->
@@ -207,63 +214,69 @@
           <h5 class="text-secondary fw-normal py-2 fst-italic">We are a team run by like-minded high school graduates who are constantly to bring change to the education system of Nepal. In particular, we are chasing a new approach to Education where we are the hunters, SMIlE hunters, trying to bring Smiles to every child's face and unifying through education.</h5>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center mx-auto">
-          <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/profile-img.JPG" alt="profile-img">
-          <h2 class="mt-3">Chandan Vomjan</h2>
-          <ul class="list-unstyled contact-info">
-            <li><i class="#"></i> Co-founder & Executive Director</li>
-            <li><i class="fas fa-envelope me-2"></i> tylerchan707@gmail.com</li>
-            <li><i class="fas fa-map-marker-alt me-2"></i> Boudha, Kathmandu</li>
-          </ul>
-          <ul class="social-icons my-5 d-flex justify-content-center">
-            <a href="https://www.instagram.com/og_chandan/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/chandan-vomjan-7a7a2129a/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+  <div class="row mt-4 py-3">
+    <!-- Chandan Vomjan -->
+    <div class="col-lg-3 mt-5 text-center">
+      <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/profile-img.JPG" alt="Chandan Vomjan">
+      <h2 class="mt-3">Chandan Vomjan</h2>
+      <ul class="list-unstyled contact-info">
+        <li><i class="#"></i> Co-founder & Executive Director</li>
+        <li><i class="fas fa-envelope me-2"></i> tylerchan707@gmail.com</li>
+        <li><i class="fas fa-map-marker-alt me-2"></i> Boudha, Kathmandu</li>
+      </ul>
+      <ul class="social-icons my-5 d-flex justify-content-center">
+        <a href="https://www.instagram.com/og_chandan/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/chandan-vomjan-7a7a2129a/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+      </ul>
+    </div>
 
-        </div>
-        <div class="row">
-          <div class="col-lg-4 mt-5 order-lg-0 order-2 text-center mx-auto">
-            <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/landing-page.jpg" alt="profile-img">
-            <h2 class="mt-3">Aadesh Regmi</h2>
-            <ul class="list-unstyled contact-info">
-              <li><i class="#"></i> Co-founder & Chief Operating Officer</li>
-              <li><i class="fas fa-envelope me-2"></i> aadeshregmi7@gmail.com</li>
-              <li><i class="fas fa-map-marker-alt me-2"></i> Sankhamul, Kathmandu</li>
-            </ul>
-            <ul class="social-icons my-5 d-flex justify-content-center">
-              <a href="https://www.instagram.com/regmi_aadesh7/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/aadesh-regmi-5399b321b/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-  
-          </div>
-          <div class="row">
-            <div class="col-lg-4 mt-5 order-lg-0 order-3 text-center mx-auto">
-              <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/aashray.jpg" alt="profile-img">
-              <h2 class="mt-3">Aashray Chapagai</h2>
-              <ul class="list-unstyled contact-info">
-                <li><i class="#"></i> Project Manager</li>
-                <li><i class="fas fa-envelope me-2"></i>aashraychapagai22@gmail.com</li>
-                <li><i class="fas fa-map-marker-alt me-2"></i> Bhaktapur, Nepal</li>
-              </ul>
-              <ul class="social-icons my-5 d-flex justify-content-center">
-                <a href="https://www.instagram.com/chapagai_aashray/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/aashray-chapagai-0741a4232/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-    
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mt-5 order-lg-0 order-3 text-center mx-auto">
-                <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/saksam.jpg" alt="profile-img">
-                <h2 class="mt-3">Saksham Dhakal</h2>
-                <ul class="list-unstyled contact-info">
-                  <li><i class="#"></i> Volunteer Coordinator</li>
-                  <li><i class="fas fa-envelope me-2"></i>  sakshamdhakal111@gmail.com </li>
-                  <li><i class="fas fa-map-marker-alt me-2"></i> Bhaktapur, Nepal</li>
-                </ul>
-                <ul class="social-icons my-5 d-flex justify-content-center">
-                  <a href="https://www.instagram.com/sakshamdhakal678/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#home" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-      
-              </div>
-            </section>
+    <!-- Aadesh Regmi -->
+    <div class="col-lg-3 mt-5 text-center">
+      <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/landing-page.jpg" alt="Aadesh Regmi">
+      <h2 class="mt-3">Aadesh Regmi</h2>
+      <ul class="list-unstyled contact-info">
+        <li><i class="#"></i> Co-founder & Chief Operating Officer</li>
+        <li><i class="fas fa-envelope me-2"></i> aadeshregmi7@gmail.com</li>
+        <li><i class="fas fa-map-marker-alt me-2"></i> Sankhamul, Kathmandu</li>
+      </ul>
+      <ul class="social-icons my-5 d-flex justify-content-center">
+        <a href="https://www.instagram.com/regmi_aadesh7/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aadesh-regmi-5399b321b/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+      </ul>
+    </div>
+
+    <!-- Aashray Chapagai -->
+    <div class="col-lg-3 mt-5 text-center">
+      <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/aashray.jpg" alt="Aashray Chapagai">
+      <h2 class="mt-3">Aashray Chapagai</h2>
+      <ul class="list-unstyled contact-info">
+        <li><i class="#"></i> Project Manager</li>
+        <li><i class="fas fa-envelope me-2"></i>aashraychapagai22@gmail.com</li>
+        <li><i class="fas fa-map-marker-alt me-2"></i> Bhaktapur, Nepal</li>
+      </ul>
+      <ul class="social-icons my-5 d-flex justify-content-center">
+        <a href="https://www.instagram.com/chapagai_aashray/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aashray-chapagai-0741a4232/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+      </ul>
+    </div>
+
+    <!-- Saksham Dhakal -->
+    <div class="col-lg-3 mt-5 text-center">
+      <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/saksam.jpg" alt="Saksham Dhakal">
+      <h2 class="mt-3">Saksham Dhakal</h2>
+      <ul class="list-unstyled contact-info">
+        <li><i class="#"></i> Volunteer Coordinator</li>
+        <li><i class="fas fa-envelope me-2"></i>  sakshamdhakal111@gmail.com </li>
+        <li><i class="fas fa-map-marker-alt me-2"></i> Bhaktapur, Nepal</li>
+      </ul>
+      <ul class="social-icons my-5 d-flex justify-content-center">
+        <a href="https://www.instagram.com/sakshamdhakal678/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#home" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+      </ul>
+    </div>
+  </div>
+</section>
+
           
 
      <!-- Contact Section -->
